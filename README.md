@@ -1,9 +1,9 @@
-📍 ESP32 GPS Tracker with Web Interface
+# 📍 ESP32 GPS Tracker with Web Interface
 
 This project turns an ESP32-WROOM-32D into a GPS tracker that connects to Wi-Fi, reads data from a NEO-6M GPS module, and displays the location on a webpage using OpenStreetMap.
 This project will later come a part of an autonomus anchor for my boat motor.
 
-📌 Features
+## 📌 Features
 
 ![Nimetön](https://github.com/user-attachments/assets/233938b1-bcda-429a-889b-d7287b9829d1)
 
@@ -27,11 +27,11 @@ Jumper wires
 
 🔹 Step 1: Flash MicroPython on ESP32
 
-📌 Install esptool.py (Python-based flashing tool)
+### 📌 Install esptool.py (Python-based flashing tool)
 
 pip install esptool
 
-📌 Erase ESP32 Flash Memory
+### 📌 Erase ESP32 Flash Memory
 
 Connect ESP32 to USB and run:
 
@@ -39,7 +39,7 @@ esptool.py --port COM11 erase_flash
 
 (Replace COM11 with your actual ESP32 port)
 
-📌 Flash MicroPython Firmware
+### 📌 Flash MicroPython Firmware
 
 Download the latest MicroPython firmware for ESP32 from micropython.org. Then flash it:
 
@@ -61,7 +61,7 @@ python -m ampy --help
 
 🔹 Step 3: Connect GPS Module to ESP32
 
-📌 Wiring Diagram
+### 📌 Wiring Diagram
 
 GPS Module (NEO-6M)
 
@@ -91,7 +91,7 @@ If no GPS data appears, try swapping TX and RX!
 
 🔹 Step 4: Upload boot.py to ESP32
 
-📌 Upload boot.py to ESP32
+### 📌 Upload boot.py to ESP32
 
 ampy --port COM11 put boot.py
 
@@ -109,7 +109,7 @@ Run: mode COM11:115200
 
 ESP32 will print its IP Address (e.g., 192.168.1.42)
 
-Open a Browser and Visit:
+### Open a Browser and Visit:
 
 http://192.168.1.42
 
