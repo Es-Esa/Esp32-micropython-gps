@@ -5,6 +5,10 @@ This project will later come a part of an autonomus anchor for my boat motor.
 
 📌 Features
 
+![Nimetön](https://github.com/user-attachments/assets/233938b1-bcda-429a-889b-d7287b9829d1)
+
+
+
 ✅ Connects ESP32 to Wi-Fi
 
 ✅ Reads GPS coordinates (latitude, longitude)
